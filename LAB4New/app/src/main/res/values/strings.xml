@@ -1,5 +1,5 @@
 <resources>
-
+    <string name="app_name">LAB4New</string>
     <string name="actu">Actualización disponible</string>
     <string name="download">Descargar</string>
     <string name="dia">Jueves</string>
@@ -11,5 +11,4 @@
     <string name="Start">Iniciar</string>
     <string name="details">Detalles</string>
     <string name="pulse">Pulse botón para iniciar</string>
-    <string name="app_name">LAB4</string>
 </resources>
