@@ -25,16 +25,17 @@
             android:layout_width="286dp"
             android:layout_height="wrap_content"
             android:fontFamily="helvetica"
-            android:text="Actualización disponible"
+            android:text="@string/actu"
             android:textColor="@color/black"
             android:textSize="16sp"
+
 
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Descargar"
+            android:text="@string/download"
             android:textColor="#1e88e5"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -48,8 +49,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="Jueves"
-        android:textSize="50dp"
+        android:text="@string/dia"
+        android:textSize="50sp"
         android:textStyle="bold"
         android:textColor="#424242"
         android:layout_margin="18dp"
@@ -62,8 +63,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/diaCumple"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="28 de marzo"
-        android:textSize="30dp"
+        android:text="@string/fecha"
+        android:textSize="30sp"
         android:textColor="#757575"
         android:layout_margin="18dp"
         />
@@ -75,8 +76,10 @@
         app:layout_constraintBottom_toBottomOf="@+id/fechacumple"
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="@android:color/transparent"
-        android:text="Terminar Jornada"
+        android:text="@string/jornada"
         android:textColor="#9575cd"
+        app:strokeWidth="1dp"
+        app:strokeColor="#9575cd"
 
         />
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -94,8 +97,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="Little Caesars"
-            android:textSize="25dp"
+            android:text="@string/pizza"
+            android:textSize="25sp"
             android:textColor="#424242"
             android:layout_margin="18dp"
             android:textStyle="bold"
@@ -106,8 +109,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/rest"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="Cc Bosques de San Nicolás, z4 Mixco"
-            android:textSize="17dp"
+            android:text="@string/direc"
+            android:textSize="17sp"
             android:textColor="#757575"
             android:layout_margin="18dp"
         />
@@ -117,22 +120,37 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/direccion"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="9:00am - 9:00pm"
-            android:textSize="15dp"
+            android:text="@string/horas"
+            android:textSize="15sp"
             android:textColor="#757575"
             android:layout_margin="18dp"
 
             />
 
         <Button
+            android:id="@+id/boton"
             android:layout_width="138dp"
             android:layout_height="41dp"
             android:layout_marginStart="36dp"
             android:layout_marginTop="16dp"
-            android:text="Iniciar"
+            android:text="@string/Start"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/hora"
             android:backgroundTint="#ff5722"
+            />
+
+        <Button
+            android:layout_width="131dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/boton"
+            app:layout_constraintTop_toBottomOf="@+id/hora"
+            android:text="@string/details"
+            android:textColor="#ff5722"
+            android:backgroundTint="@android:color/transparent"
+            app:strokeWidth="1dp"
+            app:strokeColor="#ff5722"
             />
 
 
