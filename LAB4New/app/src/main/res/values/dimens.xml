@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lineardim">0dp</dimen>
+    <dimen name="paddinglin">25dp</dimen>
+    <dimen name="largotexto1">244dp</dimen>
+    <dimen name="tamañotexto1">16sp</dimen>
+    <dimen name="tamañodescarga">16sp</dimen>
+    <dimen name="tamañodia">50sp</dimen>
+    <dimen name="margin">18dp</dimen>
+    <dimen name="tamañofecha">30sp</dimen>
+    <dimen name="margenwidget">8dp</dimen>
+    <dimen name="anchowidget">365dp</dimen>
+    <dimen name="largowidget">199dp</dimen>
+    <dimen name="tamañores">25sp</dimen>
+    <dimen name="tamañodirec">17sp</dimen>
+    <dimen name="tamañohora">15sp</dimen>
+    <dimen name="tamañoboton2">138dp</dimen>
+    <dimen name="altoboton2">48dp</dimen>
+    <dimen name="margenboton2">36dp</dimen>
+    <dimen name="margeniz">16dp</dimen>
+    <dimen name="grosor">1dp</dimen>
+    <dimen name="mtimagen">28dp</dimen>
+</resources>

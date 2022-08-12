@@ -8,5 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="celeste">#b3f5fc</color>
+    <color name="azulfuerte">#1e88e5</color>
+    <color name="grisoscuro">#424242</color>
+    <color name="grisclaro">#757575</color>
+    <color name="morado">#9575cd</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="naranja">#ff5722</color>
 
 </resources>

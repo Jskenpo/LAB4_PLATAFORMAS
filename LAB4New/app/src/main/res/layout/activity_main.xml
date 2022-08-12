@@ -10,24 +10,29 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/lineardim"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@color/celeste"
-        android:padding="25dp"
+        android:padding="@dimen/paddinglin"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
         >
 
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_refresh_24" />
+
         <TextView
-            android:layout_width="286dp"
+            android:layout_width="222dp"
             android:layout_height="wrap_content"
             android:fontFamily="helvetica"
             android:text="@string/actu"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="@dimen/tamañotexto1"
 
 
             />
@@ -36,8 +41,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/download"
-            android:textColor="#1e88e5"
-            android:textSize="16sp"
+            android:textColor="@color/azulfuerte"
+            android:textSize="@dimen/tamañodescarga"
             android:textStyle="bold"
 
             />
@@ -50,10 +55,10 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/dia"
-        android:textSize="50sp"
+        android:textSize="@dimen/tamañodia"
         android:textStyle="bold"
-        android:textColor="#424242"
-        android:layout_margin="18dp"
+        android:textColor="@color/grisoscuro"
+        android:layout_margin="@dimen/margin"
 
 
         />
@@ -64,9 +69,9 @@
         app:layout_constraintTop_toBottomOf="@+id/diaCumple"
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/fecha"
-        android:textSize="30sp"
-        android:textColor="#757575"
-        android:layout_margin="18dp"
+        android:textSize="@dimen/tamañofecha"
+        android:textColor="@color/grisclaro"
+        android:layout_margin="@dimen/margin"
         />
     <Button
         android:layout_width="wrap_content"
@@ -77,17 +82,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="@android:color/transparent"
         android:text="@string/jornada"
-        android:textColor="#9575cd"
-        app:strokeWidth="1dp"
-        app:strokeColor="#9575cd"
+        android:textColor="@color/morado"
+        app:strokeWidth="@dimen/grosor"
+        app:strokeColor="@color/morado"
 
         />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="365dp"
-        android:layout_height="199dp"
-        android:layout_marginTop="8dp"
-        android:background="#FFFFFF"
+        android:layout_width="@dimen/anchowidget"
+        android:layout_height="@dimen/largowidget"
+        android:layout_marginTop="@dimen/margenwidget"
+        android:background="@color/blanco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fechacumple">
@@ -96,22 +101,32 @@
             android:id="@+id/rest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="18dp"
+            android:layout_margin="@dimen/margin"
             android:text="@string/pizza"
-            android:textColor="#424242"
-            android:textSize="25sp"
+            android:textColor="@color/grisoscuro"
+            android:textSize="@dimen/tamañores"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mtimagen"
+            android:src="@drawable/ic_baseline_directions_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.63"
+            app:layout_constraintStart_toEndOf="@id/rest"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/direccion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="18dp"
+            android:layout_margin="@dimen/margin"
             android:text="@string/direc"
-            android:textColor="#757575"
-            android:textSize="17sp"
+            android:textColor="@color/grisclaro"
+            android:textSize="@dimen/tamañodirec"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rest" />
 
@@ -119,10 +134,10 @@
             android:id="@+id/hora"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="18dp"
+            android:layout_margin="@dimen/margin"
             android:text="@string/horas"
-            android:textColor="#757575"
-            android:textSize="15sp"
+            android:textColor="@color/grisclaro"
+            android:textSize="@dimen/tamañohora"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/direccion"
 
@@ -130,27 +145,27 @@
 
         <Button
             android:id="@+id/boton"
-            android:layout_width="138dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#ff5722"
+            android:layout_width="@dimen/tamañoboton2"
+            android:layout_height="@dimen/altoboton2"
+            android:layout_marginStart="@dimen/margenboton2"
+            android:layout_marginTop="@dimen/margeniz"
+            android:backgroundTint="@color/naranja"
             android:text="@string/Start"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/hora" />
 
         <Button
-            android:layout_width="131dp"
-            android:layout_height="48dp"
+            android:layout_width="@dimen/tamañoboton2"
+            android:layout_height="@dimen/altoboton2"
             android:layout_marginTop="14dp"
             android:backgroundTint="@android:color/transparent"
             android:text="@string/details"
-            android:textColor="#ff5722"
+            android:textColor="@color/naranja"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/boton"
             app:layout_constraintTop_toBottomOf="@+id/hora"
-            app:strokeColor="#ff5722"
-            app:strokeWidth="1dp" />
+            app:strokeColor="@color/naranja"
+            app:strokeWidth="@dimen/grosor" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
