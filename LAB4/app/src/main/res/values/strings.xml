@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">LAB4</string>
+    <string name="actu">Actualizacion Disponible</string>
+    <string name="birthday">Jueves</string>
+    <string name="DateBirth">28 de marzo</string>
+    <string name="finish">Terminar jornada</string>
+    <string name="download">Descargar</string>
+    <string name="rest">Little Caesars</string>
+    <string name="dir">Cc Bosques de San Nicolás, z4 Mixco</string>
+    <string name="hora">9:00am 9:00PM</string>
+    <string name="btnIniciar">Iniciar</string>
+    <string name="btnDetalles">Detalles</string>
+    <String name="inicio">Inicia app en el botón</String>
+    <String name="tipoletra">helvetica</String>
 </resources>
