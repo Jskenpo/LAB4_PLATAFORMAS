@@ -73,7 +73,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="4dp"
-        android:text="Informacion adicional"
+        android:text="@string/informacion_adicional"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
@@ -88,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -108,12 +110,12 @@
         app:srcCompat="@drawable/ic_baseline_access_time_24" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/llamar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Llamar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/num"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView

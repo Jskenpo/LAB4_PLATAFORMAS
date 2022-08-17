@@ -11,5 +11,6 @@
     <string name="Start">Iniciar</string>
     <string name="details">Detalles</string>
     <string name="pulse">Pulse botón para iniciar</string>
-    <string name="iniciar_vista">Iniciar Vista</string>
+    <string name="iniciar_vista">Iniciar Visita</string>
+    <string name="informacion_adicional">Informacion adicional</string>
 </resources>

@@ -31,12 +31,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         maps.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, android.net.Uri.parse("https://goo.gl/maps/zfwz6MMrsGXVHL887"))
+            val intent = Intent(Intent.ACTION_VIEW, android.net.Uri.parse("https://goo.gl/maps/X1wcz2VCDFDzmBV59"))
             startActivity(intent)
         }
 
         descarga.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, android.net.Uri.parse("https://play.google.com/store/apps/details?id=com.whatsapp"))
+            val intent = Intent(Intent.ACTION_VIEW, android.net.Uri.parse("https://play.google.com/store/apps/details?id=com.kitkagames.fallbuddies&hl=es"))
             startActivity(intent)
         }
 
