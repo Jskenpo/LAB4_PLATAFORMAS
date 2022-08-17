@@ -2,10 +2,17 @@ package com.plataformas.lab4new
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
+
+lateinit var vista: Button
+lateinit var llamar: TextView
 
 class PermisosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_permisos)
+        vista = findViewById(R.id.btn_permisos)
+        llamar = findViewById(R.id.txt_permisos)
     }
 }
