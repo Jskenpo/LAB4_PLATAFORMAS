@@ -20,4 +20,5 @@
     <dimen name="margeniz">16dp</dimen>
     <dimen name="grosor">1dp</dimen>
     <dimen name="mtimagen">28dp</dimen>
+    <dimen name="tamañodirec2">20sp</dimen>
 </resources>

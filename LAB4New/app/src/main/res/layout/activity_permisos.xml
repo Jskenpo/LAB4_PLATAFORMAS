@@ -6,4 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".PermisosActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="250dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="490dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pizza"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamañodia"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/direc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/direc"
+        android:textColor="@color/grisoscuro"
+        android:textSize="@dimen/tamañodirec2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:layout_width="371dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:textColor="@color/blanco"
+        android:backgroundTint="@color/naranja"
+        android:text="@string/iniciar_vista"
+        android:textSize="20sp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_phone_forwarded_24"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="546dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

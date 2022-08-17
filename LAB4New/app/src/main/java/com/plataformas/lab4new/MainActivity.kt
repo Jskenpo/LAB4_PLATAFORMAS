@@ -40,10 +40,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
-
-
+        deti.setOnClickListener {
+            val intent = Intent(this, PermisosActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     
